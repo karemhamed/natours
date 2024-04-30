@@ -8,14 +8,13 @@
 
 Welcome to Natours! This full-stack web application is designed for travel enthusiasts who love exploring nature and going on tour vacations.
 
-**Developed under the guidance of Jonas Schmedtmann's [Node.js course](https://www.udemy.com/course/nodejs-express-mongodb-bootcamp/), Natours incorporates:**
-
-- API creation
-- MVC Architecture
-- User Authentication
-- Data Modeling
-- Real-time Map integration using Mapbox
-- File Uploading
+> Developed under the guidance of Jonas Schmedtmann's [Node.js course](https://www.udemy.com/course/nodejs-express-mongodb-bootcamp/), Natours incorporates:
+- 📃 API creation
+- 🎮 MVC Architecture
+- 👩‍💻 User Authentication
+- 📚 Data Modeling
+- 🤳 Real-time Map integration using Mapbox
+- 📌 File Uploading
 - and much more 😉
 
 ## Technologies 🚀
@@ -54,20 +53,28 @@ Welcome to Natours! This full-stack web application is designed for travel enthu
 
 To set up your local environment for the Natours app, follow these steps:
 
-1. **Install Dependencies:**
+1. Install Dependencies:
 
    Run the following command to install all the required dependencies:
    
    ```bash
    npm install
-   ```bash
-   DATABASE=your-mongodb-database-url
+
+
+# MongoDB Configuration
+Configure Environment Variables:Before running the Natours app, you need to configure your environment variables.
+Create a 
+.env file in the root directory of the app and add the following environment variables:
+```bash
+DATABASE=your-mongodb-database-url
 USERNAME=your-mongodb-username
 DATABASE_PASSWORD=your-mongodb-password
-   ```bash
+
+# JSON Web Token Configuration
 SECRET=your-json-web-token-secret
 JWT_EXPIRES_IN=90d
 JWT_COOKIE_EXPIRES_IN=90
-   ```bash
+
+# Stripe Configuration
 STRIPE_SECRET_KEY=your-stripe-secret-key
 STRIPE_WEBHOOK_SECRET=your-stripe-webhook-secret
